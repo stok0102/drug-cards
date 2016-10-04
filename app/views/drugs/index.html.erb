@@ -12,6 +12,10 @@
   <tbody>
     <% @drugs.each do |drug| %>
       <tr>
+        <td>Name: <%= drug.name %></td>
+        <td>Reconstitution: <%= drug.reconstitution %></td>
+        <td>Notes: <%= drug.notes %></td>
+        <td>Latex: <%= drug.latex %></td>
         <td><%= link_to 'Show', drug %></td>
         <td><%= link_to 'Edit', edit_drug_path(drug) %></td>
         <td><%= link_to 'Destroy', drug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
