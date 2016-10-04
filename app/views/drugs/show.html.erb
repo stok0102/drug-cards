@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
-
+<h1>Name: <%= @drug.name %></h1>
+<h4>Reconstitution: <%= @drug.reconstitution %></h4>
+<h4>Notes: <%= @drug.notes %></h4>
+<h4>Latex:
+  <% if @drug.latex %>
+    CONTAINS LATEX
+  <% elsif !@drug.latex %>
+    LATEX FREE
+  <% end %>
+</h4>
+<%= link_to 'Destroy', @drug, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Edit', edit_drug_path(@drug) %> |
 <%= link_to 'Back', drugs_path %>
