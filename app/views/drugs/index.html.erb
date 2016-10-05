@@ -13,6 +13,8 @@
     <% @drugs.each do |drug| %>
       <tr>
         <td>Name: <%= drug.name %></td>
+        <td>Manufacturer: <%= drug.manufacturer %></td>
+        <td>NDC: <%= drug.NDC %></td>
         <td>Reconstitution: <%= drug.reconstitution %></td>
         <td>Notes: <%= drug.notes %></td>
         <td>Latex: <%= drug.latex %></td>

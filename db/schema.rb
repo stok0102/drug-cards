@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161004224929) do
+ActiveRecord::Schema.define(version: 20161005172806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20161004224929) do
     t.string  "reconstitution"
     t.boolean "latex"
     t.string  "notes"
+    t.string  "manufacturer"
+    t.string  "NDC"
   end
 
 end
