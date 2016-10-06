@@ -17,6 +17,7 @@ gem 'geocoder'
 gem 'rest-client'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'mailboxer'
 
 group :development, :test do
   gem 'byebug', platform: :mri
