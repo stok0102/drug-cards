@@ -18,9 +18,11 @@
         <td>Reconstitution: <%= drug.reconstitution %></td>
         <td>Notes: <%= drug.notes %></td>
         <td>Latex: <%= drug.latex %></td>
-        <td><%= link_to 'Show', drug %></td>
-        <td><%= link_to 'Edit', edit_drug_path(drug) %></td>
-        <td><%= link_to 'Destroy', drug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Show', drug %></td>
+          <td><%= link_to 'Edit', edit_drug_path(drug) %></td>
+          <td><%= link_to 'Destroy', drug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
