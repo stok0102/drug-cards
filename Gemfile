@@ -18,6 +18,13 @@ gem 'rest-client'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'mailboxer'
+gem 'bundler', '>= 1.8.4'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
 
 group :development, :test do
   gem 'byebug', platform: :mri
